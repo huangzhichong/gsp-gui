@@ -15,7 +15,7 @@ public class Common {
         java.util.Date currentDate = new java.util.Date();
         java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd");
         String date = dateFormat.format(currentDate);
-        Thread.sleep(1);
+        Thread.sleep(1000);
         return date;
     }
 
@@ -23,7 +23,7 @@ public class Common {
         java.util.Date currentDate = new java.util.Date();
         java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat(timeFormat);
         String date = dateFormat.format(currentDate);
-        Thread.sleep(1);
+        Thread.sleep(1000);
         return date;
     }
 

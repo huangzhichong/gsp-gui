@@ -3,11 +3,11 @@ package GUI;
 import Helper.Config;
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import static org.apache.poi.ss.formula.functions.BooleanFunction.NOT;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -20,10 +20,12 @@ import javax.swing.event.DocumentListener;
  */
 public class JChooseFile extends javax.swing.JFrame {
 
+    private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(JChooseFile.class);
+
     /**
      * Creates new form JChooseFile
      */
-    public JChooseFile() {        
+    public JChooseFile() {
         initComponents();
     }
 
@@ -37,6 +39,16 @@ public class JChooseFile extends javax.swing.JFrame {
     private void initComponents() {
 
         jFileChooser = new javax.swing.JFileChooser();
+        jDialogError = new javax.swing.JDialog();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextAreaErrorMsg = new javax.swing.JTextArea();
+        jLabelPopupTitle = new javax.swing.JLabel();
+        jDialogSuccess = new javax.swing.JDialog();
+        jLabelSuccess = new javax.swing.JLabel();
+        jDialogLoading = new javax.swing.JDialog();
+        jLabelLoading = new javax.swing.JLabel();
+        jLabelLoadingText = new javax.swing.JLabel();
+        jPanelMain = new javax.swing.JPanel();
         jOpenFile = new javax.swing.JButton();
         jImportData = new javax.swing.JButton();
         jFilePath = new javax.swing.JTextField();
@@ -52,15 +64,112 @@ public class JChooseFile extends javax.swing.JFrame {
         jLabelPurchaser = new javax.swing.JLabel();
         jTextFieldPurchaser = new javax.swing.JTextField();
         jTextFieldPassword = new javax.swing.JTextField();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenuItemExit = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
 
         jFileChooser.setDialogTitle("选择文件");
         jFileChooser.setFileFilter(new ExcelFilter());
 
+        jDialogError.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        jDialogError.setTitle("出错啦！");
+        jDialogError.setAlwaysOnTop(true);
+        jDialogError.setBounds(new java.awt.Rectangle(150, 23, 360, 200));
+        jDialogError.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jDialogError.setMinimumSize(new java.awt.Dimension(360, 200));
+        jDialogError.setPreferredSize(new java.awt.Dimension(360, 200));
+        jDialogError.setResizable(false);
+        jDialogError.setSize(new java.awt.Dimension(360, 200));
+
+        jTextAreaErrorMsg.setColumns(20);
+        jTextAreaErrorMsg.setRows(5);
+        jScrollPane1.setViewportView(jTextAreaErrorMsg);
+
+        jLabelPopupTitle.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabelPopupTitle.setText("出错啦 !");
+
+        javax.swing.GroupLayout jDialogErrorLayout = new javax.swing.GroupLayout(jDialogError.getContentPane());
+        jDialogError.getContentPane().setLayout(jDialogErrorLayout);
+        jDialogErrorLayout.setHorizontalGroup(
+            jDialogErrorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogErrorLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(jDialogErrorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelPopupTitle))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        jDialogErrorLayout.setVerticalGroup(
+            jDialogErrorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogErrorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelPopupTitle)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        jDialogSuccess.setTitle("导入成功");
+        jDialogSuccess.setAlwaysOnTop(true);
+        jDialogSuccess.setMaximumSize(new java.awt.Dimension(300, 100));
+        jDialogSuccess.setMinimumSize(new java.awt.Dimension(300, 100));
+        jDialogSuccess.setPreferredSize(new java.awt.Dimension(300, 100));
+        jDialogSuccess.setSize(new java.awt.Dimension(300, 100));
+
+        jLabelSuccess.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabelSuccess.setText("导入成功！");
+
+        javax.swing.GroupLayout jDialogSuccessLayout = new javax.swing.GroupLayout(jDialogSuccess.getContentPane());
+        jDialogSuccess.getContentPane().setLayout(jDialogSuccessLayout);
+        jDialogSuccessLayout.setHorizontalGroup(
+            jDialogSuccessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogSuccessLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jLabelSuccess)
+                .addContainerGap(139, Short.MAX_VALUE))
+        );
+        jDialogSuccessLayout.setVerticalGroup(
+            jDialogSuccessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogSuccessLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(jLabelSuccess)
+                .addContainerGap(28, Short.MAX_VALUE))
+        );
+
+        jDialogLoading.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        jDialogLoading.setAlwaysOnTop(true);
+        jDialogLoading.setBounds(new java.awt.Rectangle(155, 50, 350, 180));
+        jDialogLoading.setMinimumSize(new java.awt.Dimension(350, 120));
+        jDialogLoading.setName("dialogLoading"); // NOI18N
+        jDialogLoading.setResizable(false);
+
+        jLabelLoading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/ajax-loader.gif"))); // NOI18N
+
+        jLabelLoadingText.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabelLoadingText.setText("导入数据中，请稍后");
+
+        javax.swing.GroupLayout jDialogLoadingLayout = new javax.swing.GroupLayout(jDialogLoading.getContentPane());
+        jDialogLoading.getContentPane().setLayout(jDialogLoadingLayout);
+        jDialogLoadingLayout.setHorizontalGroup(
+            jDialogLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogLoadingLayout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(jLabelLoadingText)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelLoading, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+        );
+        jDialogLoadingLayout.setVerticalGroup(
+            jDialogLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogLoadingLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addGroup(jDialogLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelLoading, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelLoadingText))
+                .addContainerGap(66, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("德典数据导入工具");
+        setMinimumSize(new java.awt.Dimension(660, 280));
+        setResizable(false);
 
         jOpenFile.setText("打开文件");
         jOpenFile.addActionListener(new java.awt.event.ActionListener() {
@@ -144,116 +253,119 @@ public class JChooseFile extends javax.swing.JFrame {
         jTextFieldPassword.setEditable(false);
         jTextFieldPassword.setText(Config.getInstance().getValue("password"));
 
-        jMenuItemExit.setText("选项");
-
-        jMenuItem1.setText("退出");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        jMenuItemExit.add(jMenuItem1);
-
-        jMenuBar1.add(jMenuItemExit);
-
-        setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+        javax.swing.GroupLayout jPanelMainLayout = new javax.swing.GroupLayout(jPanelMain);
+        jPanelMain.setLayout(jPanelMainLayout);
+        jPanelMainLayout.setHorizontalGroup(
+            jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMainLayout.createSequentialGroup()
+                .addGap(3, 3, 3)
+                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMainLayout.createSequentialGroup()
+                        .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jImportData, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jOpenFile, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabelHost, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(jOpenFile, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMainLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelUser, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelHost, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(28, 28, 28)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jFilePath, javax.swing.GroupLayout.DEFAULT_SIZE, 539, Short.MAX_VALUE)
-                        .addGap(6, 6, 6))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
+                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jFilePath, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMainLayout.createSequentialGroup()
+                        .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanelMainLayout.createSequentialGroup()
                                 .addComponent(jTextFieldUser, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(90, 90, 90)
                                 .addComponent(jLabelContactPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jTextFieldContactPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelMainLayout.createSequentialGroup()
                                 .addComponent(jTextFieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(90, 90, 90)
                                 .addComponent(jLabelPurchaser, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jTextFieldPurchaser, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addGroup(jPanelMainLayout.createSequentialGroup()
                                 .addComponent(jTextFieldHost, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(90, 90, 90)
                                 .addComponent(jLabelContact, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jTextFieldContact, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(55, 55, 55))))
+                        .addGap(49, 49, 49)))
+                .addGap(3, 3, 3))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        jPanelMainLayout.setVerticalGroup(
+            jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMainLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jOpenFile)
                     .addComponent(jFilePath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jImportData)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextFieldContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabelContact))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextFieldHost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabelHost)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextFieldContactPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabelContactPhone))
                     .addComponent(jLabelUser)
                     .addComponent(jTextFieldUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextFieldPurchaser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabelPurchaser))
                     .addComponent(jLabelPassword)
                     .addComponent(jTextFieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(437, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanelMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        System.exit(0);         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     private void jImportDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jImportDataActionPerformed
         // TODO add your handling code here:
         String filePath = jFilePath.getText();
-        try {
-            ImportFile.doImport(filePath);
-        } catch (IOException ex) {
-            Logger.getLogger(JChooseFile.class.getName()).log(Level.SEVERE, null, ex);
+        if (!filePath.isEmpty()) {
+            jImportData.setEnabled(false);
+            try {
+                jDialogLoading.setVisible(true);
+                ImportFile.doImport(filePath);
+                jDialogLoading.setVisible(false);
+                jDialogSuccess.setVisible(true);
+            } catch (Exception ex) {
+                jDialogLoading.setVisible(false);
+                jTextAreaErrorMsg.setText("导入文件的时候出错了，请检查原文件是否符合规范");
+                jDialogError.setVisible(true);
+                logger.error("Error in importing files. \n" + ex);
+            }
         }
+
+
     }//GEN-LAST:event_jImportDataActionPerformed
 
     private void jFilePathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFilePathActionPerformed
@@ -319,19 +431,26 @@ public class JChooseFile extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog jDialogError;
+    private javax.swing.JDialog jDialogLoading;
+    private javax.swing.JDialog jDialogSuccess;
     private javax.swing.JFileChooser jFileChooser;
     private javax.swing.JTextField jFilePath;
     private javax.swing.JButton jImportData;
     private javax.swing.JLabel jLabelContact;
     private javax.swing.JLabel jLabelContactPhone;
     private javax.swing.JLabel jLabelHost;
+    private javax.swing.JLabel jLabelLoading;
+    private javax.swing.JLabel jLabelLoadingText;
     private javax.swing.JLabel jLabelPassword;
+    private javax.swing.JLabel jLabelPopupTitle;
     private javax.swing.JLabel jLabelPurchaser;
+    private javax.swing.JLabel jLabelSuccess;
     private javax.swing.JLabel jLabelUser;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenu jMenuItemExit;
     private javax.swing.JButton jOpenFile;
+    private javax.swing.JPanel jPanelMain;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextAreaErrorMsg;
     private javax.swing.JTextField jTextFieldContact;
     private javax.swing.JTextField jTextFieldContactPhone;
     private javax.swing.JTextField jTextFieldHost;

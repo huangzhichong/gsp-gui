@@ -12,8 +12,10 @@ package Helper;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import org.apache.log4j.Logger;
 
 public class Config {
+    private static Logger logger = Logger.getLogger(Config.class);
 
     private static Config instance = null;
     private Properties properties;
@@ -32,7 +34,7 @@ public class Config {
             inputStream = getClass().getResourceAsStream("config.properties");
             properties.load(inputStream);
         } catch (IOException e) {
-            System.out.println("Error in opening config file, use defaul values.");
+          logger.error(("Error in opening config file, use defaul values."));
         }
 
     }

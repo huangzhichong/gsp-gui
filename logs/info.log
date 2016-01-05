@@ -1,0 +1,227 @@
+2016-01-05 17:32:46  [ AWT-EventQueue-0:0 ] - [ INFO ]  Read file with xls format
+2016-01-05 17:32:46  [ AWT-EventQueue-0:39 ] - [ ERROR ]  Failed to open file /Users/huangsmart/Desktop/gsp/pax.xls
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:112)
+	at org.apache.poi.poifs.filesystem.NPOIFSFileSystem.<init>(NPOIFSFileSystem.java:300)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:400)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:381)
+	at Helper.ExcelHelper.getWorkbook(ExcelHelper.java:164)
+	at Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:55)
+	at GUI.ImportFile.doImport(ImportFile.java:32)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:306)
+	at GUI.JChooseFile.access$200(JChooseFile.java:22)
+	at GUI.JChooseFile$3.actionPerformed(JChooseFile.java:129)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-05 17:32:46  [ AWT-EventQueue-0:107 ] - [ ERROR ]  Error in importing files. 
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+2016-01-05 17:33:07  [ AWT-EventQueue-0:20718 ] - [ INFO ]  Read file with xls format
+2016-01-05 17:33:07  [ AWT-EventQueue-0:20975 ] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-05 17:33:07  [ AWT-EventQueue-0:20975 ] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量]
+2016-01-05 17:33:07  [ AWT-EventQueue-0:20976 ] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-05 17:33:07  [ AWT-EventQueue-0:20980 ] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-05 17:33:07  [ AWT-EventQueue-0:20980 ] - [ DEBUG ]  sa
+2016-01-05 17:33:07  [ AWT-EventQueue-0:20981 ] - [ DEBUG ]  @ctive123
+2016-01-05 17:33:07  [ AWT-EventQueue-0:21116 ] - [ INFO ]  Read file with xls format
+2016-01-05 17:33:08  [ AWT-EventQueue-0:21366 ] - [ INFO ]  Get product number from database -> 21
+2016-01-05 17:33:09  [ AWT-EventQueue-0:22370 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173308
+2016-01-05 17:33:12  [ AWT-EventQueue-0:25559 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173308
+2016-01-05 17:33:12  [ AWT-EventQueue-0:25569 ] - [ INFO ]  Get product number from database -> 21
+2016-01-05 17:33:13  [ AWT-EventQueue-0:26574 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173312
+2016-01-05 17:33:16  [ AWT-EventQueue-0:29748 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173312
+2016-01-05 17:33:16  [ AWT-EventQueue-0:29758 ] - [ INFO ]  Get product number from database -> 22
+2016-01-05 17:33:17  [ AWT-EventQueue-0:30762 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173316
+2016-01-05 17:33:20  [ AWT-EventQueue-0:33943 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173316
+2016-01-05 17:33:20  [ AWT-EventQueue-0:34009 ] - [ INFO ]  Get product number from database -> 23
+2016-01-05 17:33:21  [ AWT-EventQueue-0:35014 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173320
+2016-01-05 17:33:24  [ AWT-EventQueue-0:38141 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173320
+2016-01-05 17:33:24  [ AWT-EventQueue-0:38154 ] - [ INFO ]  Get product number from database -> 23
+2016-01-05 17:33:25  [ AWT-EventQueue-0:39157 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173324
+2016-01-05 17:33:29  [ AWT-EventQueue-0:42347 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173324
+2016-01-05 17:33:29  [ AWT-EventQueue-0:42357 ] - [ INFO ]  Get product number from database -> 24
+2016-01-05 17:33:30  [ AWT-EventQueue-0:43360 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173329
+2016-01-05 17:33:33  [ AWT-EventQueue-0:46531 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173329
+2016-01-05 17:33:33  [ AWT-EventQueue-0:46540 ] - [ INFO ]  Get product number from database -> 24
+2016-01-05 17:33:34  [ AWT-EventQueue-0:47545 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173333
+2016-01-05 17:33:37  [ AWT-EventQueue-0:50570 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173333
+2016-01-05 17:33:37  [ AWT-EventQueue-0:50589 ] - [ INFO ]  Get product number from database -> 25
+2016-01-05 17:33:38  [ AWT-EventQueue-0:51590 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105173337
+2016-01-05 17:33:41  [ AWT-EventQueue-0:54766 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105173337
+2016-01-05 17:33:41  [ AWT-EventQueue-0:54770 ] - [ INFO ]  Importing data finished.
+2016-01-05 17:41:37  [ AWT-EventQueue-0:0 ] - [ INFO ]  Read file with xls format
+2016-01-05 17:41:37  [ AWT-EventQueue-0:348 ] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码]
+2016-01-05 17:41:37  [ AWT-EventQueue-0:349 ] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量]
+2016-01-05 17:41:37  [ AWT-EventQueue-0:349 ] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC Simple.xls
+2016-01-05 17:41:37  [ AWT-EventQueue-0:350 ] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-05 17:41:37  [ AWT-EventQueue-0:351 ] - [ DEBUG ]  sa
+2016-01-05 17:41:37  [ AWT-EventQueue-0:351 ] - [ DEBUG ]  @ctive123
+2016-01-05 17:41:38  [ AWT-EventQueue-0:498 ] - [ INFO ]  Read file with xls format
+2016-01-05 17:41:38  [ AWT-EventQueue-0:749 ] - [ INFO ]  Get product number from database -> 21
+2016-01-05 17:41:39  [ AWT-EventQueue-0:1753 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174138
+2016-01-05 17:41:42  [ AWT-EventQueue-0:4953 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174138
+2016-01-05 17:41:42  [ AWT-EventQueue-0:4967 ] - [ INFO ]  Get product number from database -> 21
+2016-01-05 17:41:43  [ AWT-EventQueue-0:5972 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174142
+2016-01-05 17:41:46  [ AWT-EventQueue-0:9159 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174142
+2016-01-05 17:41:46  [ AWT-EventQueue-0:9171 ] - [ INFO ]  Get product number from database -> 22
+2016-01-05 17:41:47  [ AWT-EventQueue-0:10174 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174146
+2016-01-05 17:41:51  [ AWT-EventQueue-0:13545 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174146
+2016-01-05 17:41:51  [ AWT-EventQueue-0:13557 ] - [ INFO ]  Get product number from database -> 23
+2016-01-05 17:41:52  [ AWT-EventQueue-0:14561 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174151
+2016-01-05 17:41:55  [ AWT-EventQueue-0:17584 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174151
+2016-01-05 17:41:55  [ AWT-EventQueue-0:17630 ] - [ INFO ]  Get product number from database -> 23
+2016-01-05 17:41:56  [ AWT-EventQueue-0:18634 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174155
+2016-01-05 17:41:59  [ AWT-EventQueue-0:21667 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174155
+2016-01-05 17:41:59  [ AWT-EventQueue-0:21700 ] - [ INFO ]  Get product number from database -> 24
+2016-01-05 17:42:00  [ AWT-EventQueue-0:22705 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174159
+2016-01-05 17:42:03  [ AWT-EventQueue-0:25726 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174159
+2016-01-05 17:42:03  [ AWT-EventQueue-0:25773 ] - [ INFO ]  Get product number from database -> 24
+2016-01-05 17:42:04  [ AWT-EventQueue-0:26774 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174203
+2016-01-05 17:42:07  [ AWT-EventQueue-0:29859 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174203
+2016-01-05 17:42:07  [ AWT-EventQueue-0:29880 ] - [ INFO ]  Get product number from database -> 25
+2016-01-05 17:42:08  [ AWT-EventQueue-0:30885 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174207
+2016-01-05 17:42:11  [ AWT-EventQueue-0:34054 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174207
+2016-01-05 17:42:11  [ AWT-EventQueue-0:34057 ] - [ INFO ]  Importing data finished.
+2016-01-05 17:48:46  [ AWT-EventQueue-0:0 ] - [ INFO ]  Read file with xls format
+2016-01-05 17:48:46  [ AWT-EventQueue-0:336 ] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-05 17:48:46  [ AWT-EventQueue-0:337 ] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量]
+2016-01-05 17:48:46  [ AWT-EventQueue-0:337 ] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-05 17:48:46  [ AWT-EventQueue-0:338 ] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-05 17:48:46  [ AWT-EventQueue-0:338 ] - [ DEBUG ]  sa
+2016-01-05 17:48:46  [ AWT-EventQueue-0:338 ] - [ DEBUG ]  @ctive123
+2016-01-05 17:48:47  [ AWT-EventQueue-0:1071 ] - [ INFO ]  Read file with xls format
+2016-01-05 17:48:47  [ AWT-EventQueue-0:1150 ] - [ INFO ]  Get product number from database -> 21
+2016-01-05 17:48:48  [ AWT-EventQueue-0:2156 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174847
+2016-01-05 17:48:51  [ AWT-EventQueue-0:5188 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174847
+2016-01-05 17:48:51  [ AWT-EventQueue-0:5218 ] - [ INFO ]  Get product number from database -> 21
+2016-01-05 17:48:52  [ AWT-EventQueue-0:6220 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174851
+2016-01-05 17:48:55  [ AWT-EventQueue-0:9320 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174851
+2016-01-05 17:48:55  [ AWT-EventQueue-0:9332 ] - [ INFO ]  Get product number from database -> 22
+2016-01-05 17:48:56  [ AWT-EventQueue-0:10337 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174855
+2016-01-05 17:48:59  [ AWT-EventQueue-0:13520 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174855
+2016-01-05 17:48:59  [ AWT-EventQueue-0:13533 ] - [ INFO ]  Get product number from database -> 23
+2016-01-05 17:49:00  [ AWT-EventQueue-0:14537 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174859
+2016-01-05 17:49:03  [ AWT-EventQueue-0:17710 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174859
+2016-01-05 17:49:04  [ AWT-EventQueue-0:17737 ] - [ INFO ]  Get product number from database -> 23
+2016-01-05 17:49:05  [ AWT-EventQueue-0:18743 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174904
+2016-01-05 17:49:08  [ AWT-EventQueue-0:21899 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174904
+2016-01-05 17:49:08  [ AWT-EventQueue-0:21908 ] - [ INFO ]  Get product number from database -> 24
+2016-01-05 17:49:09  [ AWT-EventQueue-0:22913 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174908
+2016-01-05 17:49:12  [ AWT-EventQueue-0:26089 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174908
+2016-01-05 17:49:12  [ AWT-EventQueue-0:26100 ] - [ INFO ]  Get product number from database -> 24
+2016-01-05 17:49:13  [ AWT-EventQueue-0:27102 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174912
+2016-01-05 17:49:16  [ AWT-EventQueue-0:30148 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174912
+2016-01-05 17:49:16  [ AWT-EventQueue-0:30157 ] - [ INFO ]  Get product number from database -> 25
+2016-01-05 17:49:17  [ AWT-EventQueue-0:31157 ] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160105174916
+2016-01-05 17:49:20  [ AWT-EventQueue-0:34172 ] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160105174916
+2016-01-05 17:49:20  [ AWT-EventQueue-0:34177 ] - [ INFO ]  Importing data finished.
+2016-01-06 00:16:26  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 00:16:26  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 00:16:26  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量]
+2016-01-06 00:16:26  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 00:16:26  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 00:16:26  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 00:16:26  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 00:16:26  [Helper.DBHelper.<init>(DBHelper.java:179)] - [ ERROR ]  Error in making database connection.
+java.sql.SQLException: Network error IOException: Connection refused
+2016-01-06 00:16:26  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 00:16:26  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:410)] - [ ERROR ]  Error in importing files. 
+java.lang.NullPointerException
+2016-01-06 00:21:53  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 00:21:53  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:57)] - [ ERROR ]  Failed to open file /Users/huangsmart/Desktop/gsp/pax.xls
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:112)
+	at org.apache.poi.poifs.filesystem.NPOIFSFileSystem.<init>(NPOIFSFileSystem.java:300)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:400)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:381)
+	at Helper.ExcelHelper.getWorkbook(ExcelHelper.java:164)
+	at Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:55)
+	at GUI.ImportFile.doImport(ImportFile.java:25)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:383)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:187)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 00:21:53  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:390)] - [ ERROR ]  Error in importing files. 
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+2016-01-06 00:23:38  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 00:23:39  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 00:23:39  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量]
+2016-01-06 00:23:39  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 00:23:39  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 00:23:39  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 00:23:39  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 00:23:39  [Helper.DBHelper.<init>(DBHelper.java:179)] - [ ERROR ]  Error in making database connection.
+java.sql.SQLException: Network error IOException: Connection refused
+2016-01-06 00:23:39  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 00:23:39  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:364)] - [ ERROR ]  Error in importing files. 
+java.lang.NullPointerException

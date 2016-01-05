@@ -5,28 +5,29 @@
  */
 package Helper;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
  *
  * @author huangsmart
  */
 public class ExcelHelper {
+
+    private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(ExcelHelper.class);
 
     public static String imgList;
     public static String errorMsg;
@@ -43,32 +44,30 @@ public class ExcelHelper {
         return temp.toUpperCase() + target.substring(1);
     }
 
-    public static boolean checkExcelColumn(String filePath) {
+    public static boolean checkExcelColumn(String filePath) throws Exception {
         Boolean result = false;
         if (filePath.endsWith(".xls")) {
-            File f = new File(filePath);
-            List<List<String>> list = null;
-            InputStream is = null;
-            HSSFWorkbook wb = null;
+            FileInputStream inputStream = null;
+            Workbook workbook = null;
 
             try {
-                is = new FileInputStream(f);
-                wb = new HSSFWorkbook(is);
-            } catch (Exception e) {
-                System.out.println("Cannot find file or file cannot be reading!");
-                System.out.println(e);
+                inputStream = new FileInputStream(new File(filePath));
+                workbook = getWorkbook(inputStream, filePath);
+            } catch (Exception ex) {                
+                logger.error("Failed to open file " + filePath, ex);
+                throw ex;
             } finally {
-                try {
-                    if (null != is) {
-                        is.close();
+                if (null != inputStream) {
+                    try {
+                        inputStream.close();
+                    } catch (IOException ex) {
+                        logger.error("Not able to close this file " + filePath);
                     }
-                } catch (IOException e) {
-                    System.out.println("Cannot close input stream!");
                 }
             }
-            if (null != wb) {
-                HSSFSheet sheet = wb.getSheetAt(wb.getFirstVisibleTab());
-                HSSFRow headerRow = sheet.getRow(0);
+            if (null != workbook) {
+                Sheet sheet = workbook.getSheetAt(workbook.getFirstVisibleTab());
+                Row headerRow = sheet.getRow(0);
                 List<String> headers = new ArrayList<String>();
                 int cellNum = headerRow.getLastCellNum();
 
@@ -77,82 +76,49 @@ public class ExcelHelper {
                     headers.add(c.getStringCellValue());
                 }
                 List<String> requiredColumns = Arrays.asList("商品名称", "型号", "单位", "产地", "商品编码", "产品注册证", "产品注册证号", "数量");
-
-                System.out.println(headers.toString());
-                System.out.println(requiredColumns.toString());
-
+                logger.info("Get headers -> " + headers.toString());
+                logger.info("Required headers => " + requiredColumns.toString());
                 if (headers.containsAll(requiredColumns)) {
                     result = true;
                 }
 
             } else {
-                System.out.println("Excel file has nothing!");
+                logger.debug("Excel file has nothing!");
             }
         } else {
-            System.out.println("Excel file must be in xls format");
+            logger.debug("Excel file must be in xls format");
         }
         return result;
     }
 
-    public static List<List<String>> readCSV(String filePath) {
-        List<List<String>> list = null;
-        BufferedReader br = null;
-        try {
-            br = new BufferedReader(new FileReader(filePath));
-            String data = null;
-            try {
-                data = br.readLine();
-                if (null != data) {
-                    list = new ArrayList<List<String>>();
-                    while (data != null) {
-                        list.add(Arrays.asList(data.split(",")));
-                        data = br.readLine();
-                    }
-                } else {
-                    System.out.println("Target file has nothing!");
-                }
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        } catch (Exception e) {
-            System.out.println("Cannot find file or file cannot be reading!");
-        } finally {
-            try {
-                br.close();
-            } catch (IOException e) {
-                System.out.println("Cannot close input stream!");
-            }
-        }
-        return list;
-    }
-
     public static List<Map<String, String>> readExcel(String filePath) {
-        File f = new File(filePath);
         List<List<String>> list = null;
-        InputStream is = null;
-        HSSFWorkbook wb = null;
         ArrayList<Map<String, String>> hashResult = new ArrayList<Map<String, String>>();
 
+        FileInputStream inputStream = null;
+        Workbook workbook = null;
         try {
-            is = new FileInputStream(f);
-            wb = new HSSFWorkbook(is);
-        } catch (Exception e) {
-            System.out.println("Cannot find file or file cannot be reading!");
+            inputStream = new FileInputStream(new File(filePath));
+            workbook = getWorkbook(inputStream, filePath);
+        } catch (FileNotFoundException ex) {
+            logger.error("File can't be found under path " + filePath);
+        } catch (IOException ex) {
+            logger.error("Not able to open this file " + filePath);
         } finally {
-            try {
-                if (null != is) {
-                    is.close();
+            if (null != inputStream) {
+                try {
+                    inputStream.close();
+                } catch (IOException ex) {
+                    logger.error("Not able to close this file " + filePath);
                 }
-            } catch (IOException e) {
-                System.out.println("Cannot close input stream!");
             }
+
         }
-        if (null != wb) {
+        if (null != workbook) {
             list = new ArrayList<List<String>>();
-            HSSFSheet sheet = wb.getSheetAt(wb.getFirstVisibleTab());
+            Sheet sheet = workbook.getSheetAt(workbook.getFirstVisibleTab());
             int rowNum = sheet.getLastRowNum();
-            HSSFRow headerRow = sheet.getRow(0);
+            Row headerRow = sheet.getRow(0);
             List<String> headers = new ArrayList<String>();
             int cellNum = headerRow.getLastCellNum();
 
@@ -162,7 +128,7 @@ public class ExcelHelper {
             }
 
             for (int j = 1; j < rowNum; j++) {
-                HSSFRow row = sheet.getRow(j);
+                Row row = sheet.getRow(j);
                 List<String> args = new ArrayList<String>();
                 Map<String, String> line_map = new HashMap<String, String>();
                 for (int k = 0; k < cellNum; k++) {
@@ -174,10 +140,34 @@ public class ExcelHelper {
                 list.add(args);
                 hashResult.add(line_map);
             }
+            try {
+                workbook.close();
+            } catch (IOException ex) {
+                logger.error("Failed to close this file " + filePath);
+            }
 
         } else {
-            System.out.println("Excel file has nothing!");
+            logger.debug("Excel file has nothing!");
         }
+
         return hashResult;
     }
+
+    private static Workbook getWorkbook(FileInputStream inputStream, String excelFilePath) throws IOException {
+        Workbook workbook = null;
+
+        if (excelFilePath.endsWith("xlsx")) {
+            logger.info("Read file with xlsx format");
+            workbook = new XSSFWorkbook(inputStream);
+        } else if (excelFilePath.endsWith("xls")) {
+            logger.info("Read file with xls format");
+            workbook = new HSSFWorkbook(inputStream);
+        } else {
+            IllegalArgumentException notSupportedFormat = new IllegalArgumentException("The specified file is not Excel file");
+            logger.error("File is in not supported format", notSupportedFormat);
+        }
+
+        return workbook;
+    }
+
 }

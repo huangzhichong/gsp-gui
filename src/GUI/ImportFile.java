@@ -7,8 +7,6 @@ import Helper.ExcelHelper;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,35 +19,28 @@ import java.util.logging.Logger;
  */
 public class ImportFile {
 
-    public static void doImport(String filePath) throws IOException {
-        
-        String contactPrerson = Config.getInstance().getValue("contactPerson");
-        String contactPhoneNumber = Config.getInstance().getValue("contactPhoneNumber");
-        String purchaser =Config.getInstance().getValue("purchaser");
-        String user = Config.getInstance().getValue("user");
-        String password = Config.getInstance().getValue("password");
-        String host = Config.getInstance().getValue("host");
+    private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(ImportFile.class);
+
+    public static void doImport(String filePath) throws Exception {
         boolean checkExcelColumn = ExcelHelper.checkExcelColumn(filePath);
         if (checkExcelColumn) {
             try {
+                logger.info("Start importing data to database. The path for source file is " + filePath);
                 importFile(filePath);
             } catch (InterruptedException ex) {
-                Logger.getLogger(ImportFile.class.getName()).log(Level.SEVERE, null, ex);
+                logger.error("Error in importing excel to database.\n", ex);
+                throw ex;
             }
         } else {
-            System.out.println("表格内容不符合要求。");
+            logger.debug("Columns in file header is not matching.");
         }
     }
 
-    
-    
-    
     public static void importFile(String filePath) throws IOException, InterruptedException {
-        System.out.println("Import file to database, file path is " + filePath);
 
         String contactPrerson = Config.getInstance().getValue("contactPerson");
         String contactPhoneNumber = Config.getInstance().getValue("contactPhoneNumber");
-        String purchaser =Config.getInstance().getValue("purchaser");
+        String purchaser = Config.getInstance().getValue("purchaser");
         String user = Config.getInstance().getValue("user");
         String password = Config.getInstance().getValue("password");
         String host = Config.getInstance().getValue("host");
@@ -69,7 +60,9 @@ public class ImportFile {
             String sqlSearchProduct = "Select 商品编号 from GoodsDefinition where 备注 = '" + sku + "'";
             List<Map<String, Object>> searchResults = db.executeQuery(sqlSearchProduct);
 
-            if (searchResults.size() == 0) {
+            if (searchResults.isEmpty()) {
+
+                logger.info("Adding product info to GoodsDifination");
                 String sqlInsertProdcut = ("INSERT INTO GoodsDefinition (商品名称,型号,基本单位,生产厂商,供应商,产品注册号,联系方式,联系人,备注,修改人,修改时间) VALUES ('"
                         + productName
                         + "','"
@@ -94,7 +87,9 @@ public class ImportFile {
 
             searchResults = db.executeQuery(sqlSearchProduct);
             String productNumber = searchResults.get(0).get("商品编号").toString();
+            logger.info("Get product number from database -> " + productNumber);
             String purchaseNumber = "P" + Common.timeStamp("yyyyMMddHHmmss");
+            logger.info("Add record to PurchaseOrder_main for purchase number ->" + purchaseNumber);
 
             String sqlInsertPOMain = ("INSERT INTO PurchaseOrder_main(订单号,供应商,采购员,预计到货日期,摘要,附加说明,订单日期,是否完成验收,修改人,修改时间) VALUES ('"
                     + purchaseNumber
@@ -110,7 +105,7 @@ public class ImportFile {
                     + "无" + "','" + Common.timeStamp() + "','" + "0" + "','Administrator','" + Common.timeStamp() + "')");
 
             db.execute(sqlInsertPOMain);
-
+            logger.info("Add record to PurchaseOrder_detail for purchase number ->" + purchaseNumber);
             String sqlInsertPODetail = ("INSERT INTO PurchaseOrder_detail(订单号,商品编号,商品名称,型号,基本单位,订单数量,生产厂商,供应商,产品注册号,联系方式,联系人,备注) VALUES ('"
                     + purchaseNumber
                     + "','"
@@ -134,6 +129,8 @@ public class ImportFile {
                     + "','" + contactPhoneNumber + "','无')");
             db.execute(sqlInsertPODetail);
         }
+        
+        logger.info("Importing data finished.");
 
     }
 }
