@@ -75,7 +75,7 @@ public class ExcelHelper {
                     Cell c = headerRow.getCell(k);
                     headers.add(c.getStringCellValue());
                 }
-                List<String> requiredColumns = Arrays.asList("商品名称", "型号", "单位", "产地", "商品编码", "产品注册证", "产品注册证号", "数量");
+                List<String> requiredColumns = Arrays.asList("商品名称", "型号", "单位", "产地", "商品编码", "产品注册证", "产品注册证号", "数量","批号");
                 logger.info("Get headers -> " + headers.toString());
                 logger.info("Required headers => " + requiredColumns.toString());
                 if (headers.containsAll(requiredColumns)) {

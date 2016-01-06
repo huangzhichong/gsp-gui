@@ -97,7 +97,7 @@ public class DBHelper {
             result = st.execute(sql);
             st.close();
         } catch (SQLException e) {
-            logger.error("Failed to execute query\n" + e.fillInStackTrace());
+            logger.error("Failed to execute query\n" + sql, e);            
         }
         return result;
     }

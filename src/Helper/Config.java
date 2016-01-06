@@ -32,6 +32,7 @@ public class Config {
         properties.setProperty("user", "sa");
         properties.setProperty("password", "@ctive123");
         properties.setProperty("host", "10.109.0.161");
+        properties.setProperty("qualityPerson", "质检员");
         try {
             String filePath = System.getProperty("user.dir") + "/config/config.properties";
             logger.info("loading config from path " + filePath);

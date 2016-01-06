@@ -47,7 +47,6 @@ public class JChooseFile extends javax.swing.JFrame {
         jLabelSuccess = new javax.swing.JLabel();
         jDialogLoading = new javax.swing.JDialog();
         jLabelLoading = new javax.swing.JLabel();
-        jLabelLoadingText = new javax.swing.JLabel();
         jPanelMain = new javax.swing.JPanel();
         jOpenFile = new javax.swing.JButton();
         jImportData = new javax.swing.JButton();
@@ -64,6 +63,8 @@ public class JChooseFile extends javax.swing.JFrame {
         jLabelPurchaser = new javax.swing.JLabel();
         jTextFieldPurchaser = new javax.swing.JTextField();
         jTextFieldPassword = new javax.swing.JTextField();
+        jLabelQuality = new javax.swing.JLabel();
+        jTextFieldQuality = new javax.swing.JTextField();
 
         jFileChooser.setDialogTitle("选择文件");
         jFileChooser.setFileFilter(new ExcelFilter());
@@ -74,9 +75,7 @@ public class JChooseFile extends javax.swing.JFrame {
         jDialogError.setBounds(new java.awt.Rectangle(150, 23, 360, 200));
         jDialogError.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jDialogError.setMinimumSize(new java.awt.Dimension(360, 200));
-        jDialogError.setPreferredSize(new java.awt.Dimension(360, 200));
         jDialogError.setResizable(false);
-        jDialogError.setSize(new java.awt.Dimension(360, 200));
 
         jTextAreaErrorMsg.setColumns(20);
         jTextAreaErrorMsg.setRows(5);
@@ -108,10 +107,9 @@ public class JChooseFile extends javax.swing.JFrame {
 
         jDialogSuccess.setTitle("导入成功");
         jDialogSuccess.setAlwaysOnTop(true);
+        jDialogSuccess.setBounds(new java.awt.Rectangle(150, 50, 300, 100));
         jDialogSuccess.setMaximumSize(new java.awt.Dimension(300, 100));
         jDialogSuccess.setMinimumSize(new java.awt.Dimension(300, 100));
-        jDialogSuccess.setPreferredSize(new java.awt.Dimension(300, 100));
-        jDialogSuccess.setSize(new java.awt.Dimension(300, 100));
 
         jLabelSuccess.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabelSuccess.setText("导入成功！");
@@ -133,38 +131,35 @@ public class JChooseFile extends javax.swing.JFrame {
                 .addContainerGap(28, Short.MAX_VALUE))
         );
 
-        jDialogLoading.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        jDialogLoading.setTitle("导入数据中，请稍后");
         jDialogLoading.setAlwaysOnTop(true);
-        jDialogLoading.setBounds(new java.awt.Rectangle(155, 50, 350, 180));
-        jDialogLoading.setMinimumSize(new java.awt.Dimension(350, 120));
-        jDialogLoading.setName("dialogLoading"); // NOI18N
-        jDialogLoading.setResizable(false);
+        jDialogLoading.setBounds(new java.awt.Rectangle(150, 50, 300, 100));
+        jDialogLoading.setIconImage(null);
+        jDialogLoading.setMaximumSize(new java.awt.Dimension(300, 100));
+        jDialogLoading.setMinimumSize(new java.awt.Dimension(300, 100));
+        jDialogLoading.setPreferredSize(new java.awt.Dimension(300, 100));
 
-        jLabelLoading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/ajax-loader.gif"))); // NOI18N
-
-        jLabelLoadingText.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabelLoadingText.setText("导入数据中，请稍后");
+        jLabelLoading.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabelLoading.setText("导入数据中，请稍后");
 
         javax.swing.GroupLayout jDialogLoadingLayout = new javax.swing.GroupLayout(jDialogLoading.getContentPane());
         jDialogLoading.getContentPane().setLayout(jDialogLoadingLayout);
         jDialogLoadingLayout.setHorizontalGroup(
             jDialogLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogLoadingLayout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
-                .addComponent(jLabelLoadingText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelLoading, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addGroup(jDialogLoadingLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jLabelLoading)
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         jDialogLoadingLayout.setVerticalGroup(
             jDialogLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogLoadingLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addGroup(jDialogLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabelLoading, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabelLoadingText))
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addGap(32, 32, 32)
+                .addComponent(jLabelLoading)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
+
+        jDialogLoading.getAccessibleContext().setAccessibleName("");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("德典数据导入工具");
@@ -253,6 +248,11 @@ public class JChooseFile extends javax.swing.JFrame {
         jTextFieldPassword.setEditable(false);
         jTextFieldPassword.setText(Config.getInstance().getValue("password"));
 
+        jLabelQuality.setText("质检员");
+
+        jTextFieldQuality.setEditable(false);
+        jTextFieldQuality.setText(Config.getInstance().getValue("qualityPerson"));
+
         javax.swing.GroupLayout jPanelMainLayout = new javax.swing.GroupLayout(jPanelMain);
         jPanelMain.setLayout(jPanelMainLayout);
         jPanelMainLayout.setHorizontalGroup(
@@ -294,7 +294,13 @@ public class JChooseFile extends javax.swing.JFrame {
                                 .addComponent(jLabelContact, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jTextFieldContact, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(49, 49, 49)))
+                        .addGap(49, 49, 49))
+                    .addGroup(jPanelMainLayout.createSequentialGroup()
+                        .addGap(236, 236, 236)
+                        .addComponent(jLabelQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextFieldQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(3, 3, 3))
         );
         jPanelMainLayout.setVerticalGroup(
@@ -328,7 +334,11 @@ public class JChooseFile extends javax.swing.JFrame {
                         .addComponent(jLabelPurchaser))
                     .addComponent(jLabelPassword)
                     .addComponent(jTextFieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelQuality)
+                    .addComponent(jTextFieldQuality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -351,14 +361,14 @@ public class JChooseFile extends javax.swing.JFrame {
         // TODO add your handling code here:
         String filePath = jFilePath.getText();
         if (!filePath.isEmpty()) {
+            jDialogLoading.setVisible(true);
             jImportData.setEnabled(false);
             try {
-                jDialogLoading.setVisible(true);
                 ImportFile.doImport(filePath);
-                jDialogLoading.setVisible(false);
+                jDialogLoading.dispose();
                 jDialogSuccess.setVisible(true);
             } catch (Exception ex) {
-                jDialogLoading.setVisible(false);
+                jDialogLoading.dispose();
                 jTextAreaErrorMsg.setText("导入文件的时候出错了，请检查原文件是否符合规范");
                 jDialogError.setVisible(true);
                 logger.error("Error in importing files. \n" + ex);
@@ -377,7 +387,6 @@ public class JChooseFile extends javax.swing.JFrame {
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             File file = jFileChooser.getSelectedFile();
             System.out.println("Get file path" + file.getAbsolutePath());
-
             jFilePath.setText(file.getAbsolutePath());
             jImportData.setEnabled(true);
         } else {
@@ -441,10 +450,10 @@ public class JChooseFile extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelContactPhone;
     private javax.swing.JLabel jLabelHost;
     private javax.swing.JLabel jLabelLoading;
-    private javax.swing.JLabel jLabelLoadingText;
     private javax.swing.JLabel jLabelPassword;
     private javax.swing.JLabel jLabelPopupTitle;
     private javax.swing.JLabel jLabelPurchaser;
+    private javax.swing.JLabel jLabelQuality;
     private javax.swing.JLabel jLabelSuccess;
     private javax.swing.JLabel jLabelUser;
     private javax.swing.JButton jOpenFile;
@@ -456,6 +465,7 @@ public class JChooseFile extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldHost;
     private javax.swing.JTextField jTextFieldPassword;
     private javax.swing.JTextField jTextFieldPurchaser;
+    private javax.swing.JTextField jTextFieldQuality;
     private javax.swing.JTextField jTextFieldUser;
     // End of variables declaration//GEN-END:variables
 

@@ -283,3 +283,1802 @@ java.io.FileNotFoundException: /Users/huangsmart/NetBeansProjects/ImportDataconf
 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
 	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 20:59:12  [Helper.Config.<init>(Config.java:37)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:39:44  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:40:22  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:40:22  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:40:22  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:40:22  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:40:22  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:40:22  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:40:22  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:40:23  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:40:23  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:364)] - [ ERROR ]  Error in importing files. 
+java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+2016-01-06 23:41:18  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:41:36  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:41:36  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:41:36  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:41:36  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:41:36  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:41:36  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:41:36  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:41:37  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:41:37  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:364)] - [ ERROR ]  Error in importing files. 
+java.lang.StringIndexOutOfBoundsException: String index out of range: -3
+2016-01-06 23:42:31  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:42:38  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:42:39  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:42:39  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:42:39  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:42:39  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:42:39  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:42:39  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:42:39  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:42:40  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:364)] - [ ERROR ]  Error in importing files. 
+java.lang.StringIndexOutOfBoundsException: String index out of range: 13
+2016-01-06 23:43:20  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:43:36  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:43:36  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:43:36  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:43:36  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:43:36  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:43:36  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:43:36  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:43:37  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:43:37  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:43:38  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234337
+2016-01-06 23:43:42  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234337
+2016-01-06 23:43:43  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:43:43  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:43:44  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234343
+2016-01-06 23:43:47  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234343
+2016-01-06 23:43:48  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:43:48  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-06 23:43:49  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234348
+2016-01-06 23:43:52  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234348
+2016-01-06 23:43:53  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:43:53  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:43:54  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234353
+2016-01-06 23:43:57  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234353
+2016-01-06 23:43:58  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:43:59  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:44:00  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234359
+2016-01-06 23:44:03  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234359
+2016-01-06 23:44:04  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:44:04  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:44:05  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234404
+2016-01-06 23:44:08  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234404
+2016-01-06 23:44:09  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:44:09  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:44:10  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234409
+2016-01-06 23:44:13  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234409
+2016-01-06 23:44:14  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:44:14  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-06 23:44:15  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234414
+2016-01-06 23:44:18  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234414
+2016-01-06 23:44:20  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+2016-01-06 23:44:20  [GUI.ImportFile.importFile(ImportFile.java:157)] - [ INFO ]  Importing data finished.
+2016-01-06 23:45:15  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:45:36  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:45:36  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:45:36  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:45:36  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:45:36  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:45:36  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:45:36  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:45:36  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:45:37  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:45:38  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234537
+2016-01-06 23:45:41  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234537
+2016-01-06 23:45:42  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234537','21','14050406012','2014-09-25','2019-09-24','1','0','CN010623453','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:45:42  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:45:43  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234542
+2016-01-06 23:45:46  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234542
+2016-01-06 23:45:47  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234542','21','14060520006','2014-12-08','2019-12-07','1','0','CN010623454','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:45:47  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-06 23:45:48  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234547
+2016-01-06 23:45:51  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234547
+2016-01-06 23:45:52  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234547','22','14051208008','2014-11-17','2019-11-16','1','0','CN010623454','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:45:53  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:45:54  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234553
+2016-01-06 23:45:57  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234553
+2016-01-06 23:45:58  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234553','23','15042233014','2015-07-09','2020-07-07','1','0','CN010623455','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:45:58  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:45:59  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234558
+2016-01-06 23:46:02  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234558
+2016-01-06 23:46:03  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234558','23','15042233009','2015-07-09','2020-07-07','1','0','CN010623455','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:46:03  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:46:04  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234603
+2016-01-06 23:46:08  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234603
+2016-01-06 23:46:09  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234603','24','14071813049','2015-04-16','2020-04-14','1','0','CN010623460','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:46:09  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:46:10  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234609
+2016-01-06 23:46:13  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234609
+2016-01-06 23:46:14  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234609','24','14110609012','2015-07-14','2020-07-12','1','0','CN010623460','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:46:14  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-06 23:46:15  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106234614
+2016-01-06 23:46:19  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106234614
+2016-01-06 23:46:20  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106234614','25','14081105030','2015-03-25','2020-03-23','1','0','CN010623461','合格','0','无','质检员'1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid SQL statement or JDBC escape, terminating ''' not found.
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:1155)
+	at net.sourceforge.jtds.jdbc.SQLParser.parse(SQLParser.java:156)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:684)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:357)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:185)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:46:20  [GUI.ImportFile.importFile(ImportFile.java:159)] - [ INFO ]  Importing data finished.
+2016-01-06 23:48:55  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:50:17  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:50:26  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:50:27  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:50:27  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:50:27  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:50:27  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:50:27  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:50:27  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:50:27  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:50:27  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:50:29  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235028
+2016-01-06 23:50:32  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235028
+2016-01-06 23:50:33  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235028','21','14050406012','2014-09-25','2019-09-24','1','0','CN010623502','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:50:33  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:50:34  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235033
+2016-01-06 23:50:37  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235033
+2016-01-06 23:50:38  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235033','21','14060520006','2014-12-08','2019-12-07','1','0','CN010623503','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:50:38  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-06 23:50:39  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235038
+2016-01-06 23:50:42  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235038
+2016-01-06 23:50:43  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235038','22','14051208008','2014-11-17','2019-11-16','1','0','CN010623503','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:50:44  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:50:45  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235044
+2016-01-06 23:50:48  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235044
+2016-01-06 23:50:49  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235044','23','15042233014','2015-07-09','2020-07-07','1','0','CN010623504','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:50:49  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:50:50  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235049
+2016-01-06 23:50:53  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235049
+2016-01-06 23:50:54  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235049','23','15042233009','2015-07-09','2020-07-07','1','0','CN010623504','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:50:54  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:50:55  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235054
+2016-01-06 23:50:58  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235054
+2016-01-06 23:51:00  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235054','24','14071813049','2015-04-16','2020-04-14','1','0','CN010623505','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:51:00  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:51:01  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235100
+2016-01-06 23:51:04  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235100
+2016-01-06 23:51:05  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235100','24','14110609012','2015-07-14','2020-07-12','1','0','CN010623510','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:51:05  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-06 23:51:06  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235105
+2016-01-06 23:51:09  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235105
+2016-01-06 23:51:10  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时) VALUES ('P20160106235105','25','14081105030','2015-03-25','2020-03-23','1','0','CN010623510','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: Invalid column name '修改时'.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:51:10  [GUI.ImportFile.importFile(ImportFile.java:158)] - [ INFO ]  Importing data finished.
+2016-01-06 23:51:25  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:51:40  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:51:40  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:51:40  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:51:40  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:51:40  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:51:40  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:51:40  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:51:41  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:51:41  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:51:42  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235141
+2016-01-06 23:51:45  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235141
+2016-01-06 23:51:46  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235141','21','14050406012','2014-09-25','2019-09-24','1','0','CN010623514','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:51:46  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:51:47  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235146
+2016-01-06 23:51:50  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235146
+2016-01-06 23:51:52  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235146','21','14060520006','2014-12-08','2019-12-07','1','0','CN010623514','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:51:52  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-06 23:51:53  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235152
+2016-01-06 23:51:56  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235152
+2016-01-06 23:51:57  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235152','22','14051208008','2014-11-17','2019-11-16','1','0','CN010623515','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:51:57  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:51:58  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235157
+2016-01-06 23:52:01  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235157
+2016-01-06 23:52:02  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235157','23','15042233014','2015-07-09','2020-07-07','1','0','CN010623515','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:52:02  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:52:03  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235202
+2016-01-06 23:52:06  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235202
+2016-01-06 23:52:08  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235202','23','15042233009','2015-07-09','2020-07-07','1','0','CN010623520','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:52:08  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:52:09  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235208
+2016-01-06 23:52:12  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235208
+2016-01-06 23:52:13  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235208','24','14071813049','2015-04-16','2020-04-14','1','0','CN010623520','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:52:13  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:52:14  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235213
+2016-01-06 23:52:17  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235213
+2016-01-06 23:52:18  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235213','24','14110609012','2015-07-14','2020-07-12','1','0','CN010623521','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:52:18  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-06 23:52:19  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235218
+2016-01-06 23:52:22  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235218
+2016-01-06 23:52:24  [Helper.DBHelper.execute(DBHelper.java:100)] - [ ERROR ]  Failed to execute query
+INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('P20160106235218','25','14081105030','2015-03-25','2020-03-23','1','0','CN010623521','合格','0','无','质检员','1','Administrator','2016-01-06')
+java.sql.SQLException: There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+	at net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:368)
+	at net.sourceforge.jtds.jdbc.TdsCore.tdsErrorToken(TdsCore.java:2820)
+	at net.sourceforge.jtds.jdbc.TdsCore.nextToken(TdsCore.java:2258)
+	at net.sourceforge.jtds.jdbc.TdsCore.getMoreResults(TdsCore.java:632)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.processResults(JtdsStatement.java:584)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeSQL(JtdsStatement.java:546)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.executeImpl(JtdsStatement.java:723)
+	at net.sourceforge.jtds.jdbc.JtdsStatement.execute(JtdsStatement.java:1160)
+	at Helper.DBHelper.execute(DBHelper.java:97)
+	at GUI.ImportFile.importFile(ImportFile.java:154)
+	at GUI.ImportFile.doImport(ImportFile.java:29)
+	at GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:354)
+	at GUI.JChooseFile.access$100(JChooseFile.java:21)
+	at GUI.JChooseFile$2.actionPerformed(JChooseFile.java:182)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 23:52:24  [GUI.ImportFile.importFile(ImportFile.java:158)] - [ INFO ]  Importing data finished.
+2016-01-06 23:54:37  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:55:28  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:55:37  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:55:37  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:55:37  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:55:37  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:55:37  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:55:37  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:55:37  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:55:38  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:55:38  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:55:39  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235538
+2016-01-06 23:55:42  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235538
+2016-01-06 23:55:44  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:55:45  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235544
+2016-01-06 23:55:48  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235544
+2016-01-06 23:55:49  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-06 23:55:50  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235549
+2016-01-06 23:55:53  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235549
+2016-01-06 23:55:54  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:55:55  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235554
+2016-01-06 23:55:58  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235554
+2016-01-06 23:55:59  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-06 23:56:00  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235559
+2016-01-06 23:56:03  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235559
+2016-01-06 23:56:05  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:56:06  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235605
+2016-01-06 23:56:09  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235605
+2016-01-06 23:56:10  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-06 23:56:11  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235610
+2016-01-06 23:56:14  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235610
+2016-01-06 23:56:15  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-06 23:56:16  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235615
+2016-01-06 23:56:19  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235615
+2016-01-06 23:56:21  [GUI.ImportFile.importFile(ImportFile.java:158)] - [ INFO ]  Importing data finished.
+2016-01-06 23:59:41  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-06 23:59:49  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:59:50  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-06 23:59:50  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-06 23:59:50  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-06 23:59:50  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-06 23:59:50  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-06 23:59:50  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-06 23:59:50  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-06 23:59:51  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:59:52  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235951
+2016-01-06 23:59:55  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235951
+2016-01-06 23:59:55  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160106235951
+2016-01-06 23:59:56  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-06 23:59:57  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160106235956
+2016-01-07 00:00:00  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160106235956
+2016-01-07 00:00:00  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160106235956
+2016-01-07 00:00:01  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:00:02  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000001
+2016-01-07 00:00:05  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000001
+2016-01-07 00:00:05  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000001
+2016-01-07 00:00:07  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:00:08  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000007
+2016-01-07 00:00:11  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000007
+2016-01-07 00:00:11  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000007
+2016-01-07 00:00:12  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:00:13  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000012
+2016-01-07 00:00:16  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000012
+2016-01-07 00:00:16  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000012
+2016-01-07 00:00:17  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:00:18  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000017
+2016-01-07 00:00:21  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000017
+2016-01-07 00:00:22  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000017
+2016-01-07 00:00:23  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:00:24  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000023
+2016-01-07 00:00:27  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000023
+2016-01-07 00:00:27  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000023
+2016-01-07 00:00:28  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:00:29  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000028
+2016-01-07 00:00:32  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000028
+2016-01-07 00:00:32  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000028
+2016-01-07 00:00:33  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.
+2016-01-07 00:04:15  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:05:53  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:06:12  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:06:13  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-07 00:06:13  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-07 00:06:13  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-07 00:06:13  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-07 00:06:13  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-07 00:06:13  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-07 00:06:13  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:06:14  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:06:15  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000614
+2016-01-07 00:06:18  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000614
+2016-01-07 00:06:18  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000614
+2016-01-07 00:06:19  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:06:20  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000619
+2016-01-07 00:06:23  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000619
+2016-01-07 00:06:23  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000619
+2016-01-07 00:06:24  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:06:25  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000624
+2016-01-07 00:06:28  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000624
+2016-01-07 00:06:28  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000624
+2016-01-07 00:06:30  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:06:31  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000630
+2016-01-07 00:06:34  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000630
+2016-01-07 00:06:34  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000630
+2016-01-07 00:06:35  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:06:36  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000635
+2016-01-07 00:06:39  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000635
+2016-01-07 00:06:39  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000635
+2016-01-07 00:06:40  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:06:41  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000640
+2016-01-07 00:06:44  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000640
+2016-01-07 00:06:45  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000640
+2016-01-07 00:06:46  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:06:47  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000646
+2016-01-07 00:06:50  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000646
+2016-01-07 00:06:50  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000646
+2016-01-07 00:06:51  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:06:52  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000651
+2016-01-07 00:06:55  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000651
+2016-01-07 00:06:55  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000651
+2016-01-07 00:06:56  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.
+2016-01-07 00:07:12  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:07:20  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:07:20  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-07 00:07:20  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-07 00:07:20  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-07 00:07:20  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-07 00:07:20  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-07 00:07:20  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-07 00:07:21  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:07:21  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:07:22  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000721
+2016-01-07 00:07:25  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000721
+2016-01-07 00:07:25  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000721
+2016-01-07 00:07:27  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:07:28  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000727
+2016-01-07 00:07:31  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000727
+2016-01-07 00:07:31  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000727
+2016-01-07 00:07:32  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:07:33  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000732
+2016-01-07 00:07:36  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000732
+2016-01-07 00:07:36  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000732
+2016-01-07 00:07:37  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:07:38  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000737
+2016-01-07 00:07:41  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000737
+2016-01-07 00:07:42  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000737
+2016-01-07 00:07:43  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:07:44  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000743
+2016-01-07 00:07:47  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000743
+2016-01-07 00:07:47  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000743
+2016-01-07 00:07:48  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:07:49  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000748
+2016-01-07 00:07:52  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000748
+2016-01-07 00:07:52  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000748
+2016-01-07 00:07:53  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:07:54  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000753
+2016-01-07 00:07:58  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000753
+2016-01-07 00:07:58  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000753
+2016-01-07 00:07:59  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:08:00  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107000759
+2016-01-07 00:08:03  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107000759
+2016-01-07 00:08:03  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107000759
+2016-01-07 00:08:04  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.
+2016-01-07 00:11:33  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:11:44  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:11:44  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-07 00:11:44  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-07 00:11:44  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-07 00:11:44  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-07 00:11:44  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-07 00:11:44  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-07 00:11:45  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:11:45  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:11:46  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001145
+2016-01-07 00:11:49  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001145
+2016-01-07 00:11:49  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001145
+2016-01-07 00:11:51  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:11:52  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001151
+2016-01-07 00:11:55  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001151
+2016-01-07 00:11:55  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001151
+2016-01-07 00:11:56  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:11:57  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001156
+2016-01-07 00:12:00  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001156
+2016-01-07 00:12:00  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001156
+2016-01-07 00:12:01  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:12:02  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001201
+2016-01-07 00:12:05  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001201
+2016-01-07 00:12:05  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001201
+2016-01-07 00:12:07  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:12:08  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001207
+2016-01-07 00:12:11  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001207
+2016-01-07 00:12:11  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001207
+2016-01-07 00:12:12  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:12:13  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001212
+2016-01-07 00:12:16  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001212
+2016-01-07 00:12:16  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001212
+2016-01-07 00:12:18  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:12:19  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001218
+2016-01-07 00:12:22  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001218
+2016-01-07 00:12:22  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001218
+2016-01-07 00:12:23  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:12:24  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001223
+2016-01-07 00:12:27  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001223
+2016-01-07 00:12:27  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001223
+2016-01-07 00:12:28  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.
+2016-01-07 00:19:26  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:19:35  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:19:35  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-07 00:19:35  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-07 00:19:35  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-07 00:19:35  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-07 00:19:35  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-07 00:19:35  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-07 00:19:36  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:19:36  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:19:37  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001936
+2016-01-07 00:19:40  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001936
+2016-01-07 00:19:40  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001936
+2016-01-07 00:19:41  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:19:42  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001941
+2016-01-07 00:19:45  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001941
+2016-01-07 00:19:45  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001941
+2016-01-07 00:19:47  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:19:48  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001947
+2016-01-07 00:19:51  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001947
+2016-01-07 00:19:51  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001947
+2016-01-07 00:19:52  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:19:53  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001952
+2016-01-07 00:19:56  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001952
+2016-01-07 00:19:56  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001952
+2016-01-07 00:19:57  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:19:58  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107001957
+2016-01-07 00:20:01  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107001957
+2016-01-07 00:20:01  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107001957
+2016-01-07 00:20:03  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:20:04  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002003
+2016-01-07 00:20:07  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002003
+2016-01-07 00:20:07  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002003
+2016-01-07 00:20:08  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:20:09  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002008
+2016-01-07 00:20:12  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002008
+2016-01-07 00:20:12  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002008
+2016-01-07 00:20:13  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:20:14  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002013
+2016-01-07 00:20:17  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002013
+2016-01-07 00:20:17  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002013
+2016-01-07 00:20:19  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.
+2016-01-07 00:21:53  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:22:00  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:22:01  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-07 00:22:01  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-07 00:22:01  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-07 00:22:01  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-07 00:22:01  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-07 00:22:01  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-07 00:22:01  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:22:01  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:22:02  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002201
+2016-01-07 00:22:05  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002201
+2016-01-07 00:22:05  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002201
+2016-01-07 00:22:07  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:22:08  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002207
+2016-01-07 00:22:11  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002207
+2016-01-07 00:22:11  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002207
+2016-01-07 00:22:12  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:22:13  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002212
+2016-01-07 00:22:16  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002212
+2016-01-07 00:22:16  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002212
+2016-01-07 00:22:17  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:22:18  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002217
+2016-01-07 00:22:21  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002217
+2016-01-07 00:22:21  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002217
+2016-01-07 00:22:23  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:22:24  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002223
+2016-01-07 00:22:27  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002223
+2016-01-07 00:22:27  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002223
+2016-01-07 00:22:28  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:22:29  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002228
+2016-01-07 00:22:32  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002228
+2016-01-07 00:22:32  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002228
+2016-01-07 00:22:33  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:22:34  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002233
+2016-01-07 00:22:37  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002233
+2016-01-07 00:22:37  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002233
+2016-01-07 00:22:39  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:22:40  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002239
+2016-01-07 00:22:43  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002239
+2016-01-07 00:22:43  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002239
+2016-01-07 00:22:44  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.
+2016-01-07 00:25:43  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:25:53  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:25:53  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-07 00:25:53  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-07 00:25:53  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-07 00:25:53  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-07 00:25:53  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-07 00:25:53  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-07 00:25:54  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:25:54  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:25:55  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002554
+2016-01-07 00:25:58  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002554
+2016-01-07 00:25:58  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002554
+2016-01-07 00:25:59  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:26:00  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002559
+2016-01-07 00:26:03  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002559
+2016-01-07 00:26:03  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002559
+2016-01-07 00:26:05  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:26:06  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002605
+2016-01-07 00:26:09  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002605
+2016-01-07 00:26:09  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002605
+2016-01-07 00:26:10  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:26:11  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002610
+2016-01-07 00:26:14  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002610
+2016-01-07 00:26:14  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002610
+2016-01-07 00:26:15  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:26:16  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002615
+2016-01-07 00:26:19  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002615
+2016-01-07 00:26:20  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002615
+2016-01-07 00:26:21  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:26:22  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002621
+2016-01-07 00:26:25  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002621
+2016-01-07 00:26:25  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002621
+2016-01-07 00:26:26  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:26:27  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002626
+2016-01-07 00:26:30  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002626
+2016-01-07 00:26:30  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002626
+2016-01-07 00:26:31  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:26:32  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002631
+2016-01-07 00:26:36  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002631
+2016-01-07 00:26:36  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002631
+2016-01-07 00:26:37  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.
+2016-01-07 00:28:35  [Helper.Config.<init>(Config.java:38)] - [ INFO ]  loading config from path /Users/huangsmart/NetBeansProjects/ImportData/config/config.properties
+2016-01-07 00:28:42  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:28:43  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:79)] - [ INFO ]  Get headers -> [商品名称, 数量, 单价, 金额, 备注, 批号, 产品注册证, 产品注册证号, 规格, 型号, 产地, 单位, 商品编码, 折扣, 折后单价, 折后金额, 折扣金额, 税率(%), 含税单价, 含税金额, 税额, 出厂日期, 入库金额, 多编码, 条码, 换算率, 单位数量, 换算率1, 辅数量1, 换算率2, 辅数量2, 自定义3, 备注一, 备注二, 备注三, 大单位数量, 中单位数量, 小单位数量, 保质期, 保质期截至日期, 自定义4, 自定义5, 自定义6, 自定义7, 自定义8, 自定义9, 自定义10, 赠品, 商品别名, 零售价, 助记码, 可用数量, 运费, 入库单价, 预设售价1, 预设售价2, 预设售价3, 预设售价4, 预设售价5]
+2016-01-07 00:28:43  [Helper.ExcelHelper.checkExcelColumn(ExcelHelper.java:80)] - [ INFO ]  Required headers => [商品名称, 型号, 单位, 产地, 商品编码, 产品注册证, 产品注册证号, 数量, 批号]
+2016-01-07 00:28:43  [GUI.ImportFile.doImport(ImportFile.java:28)] - [ INFO ]  Start importing data to database. The path for source file is /Users/huangsmart/Desktop/gsp/TMDC.xls
+2016-01-07 00:28:43  [Helper.DBHelper.getInstance(DBHelper.java:53)] - [ DEBUG ]  jdbc:jtds:sqlserver://10.109.0.161:1433;DatabaseName=MEMSDB
+2016-01-07 00:28:43  [Helper.DBHelper.getInstance(DBHelper.java:54)] - [ DEBUG ]  sa
+2016-01-07 00:28:43  [Helper.DBHelper.getInstance(DBHelper.java:55)] - [ DEBUG ]  @ctive123
+2016-01-07 00:28:44  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
+2016-01-07 00:28:44  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:28:45  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002844
+2016-01-07 00:28:48  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002844
+2016-01-07 00:28:48  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002844
+2016-01-07 00:28:49  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 21
+2016-01-07 00:28:50  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002849
+2016-01-07 00:28:53  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002849
+2016-01-07 00:28:53  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002849
+2016-01-07 00:28:54  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 22
+2016-01-07 00:28:55  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002854
+2016-01-07 00:28:59  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002854
+2016-01-07 00:28:59  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002854
+2016-01-07 00:29:00  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:29:01  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002900
+2016-01-07 00:29:04  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002900
+2016-01-07 00:29:04  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002900
+2016-01-07 00:29:05  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 23
+2016-01-07 00:29:06  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002905
+2016-01-07 00:29:09  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002905
+2016-01-07 00:29:09  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002905
+2016-01-07 00:29:11  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:29:12  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002911
+2016-01-07 00:29:15  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002911
+2016-01-07 00:29:15  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002911
+2016-01-07 00:29:16  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 24
+2016-01-07 00:29:17  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002916
+2016-01-07 00:29:20  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002916
+2016-01-07 00:29:20  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002916
+2016-01-07 00:29:21  [GUI.ImportFile.importFile(ImportFile.java:94)] - [ INFO ]  Get product number from database -> 25
+2016-01-07 00:29:22  [GUI.ImportFile.importFile(ImportFile.java:97)] - [ INFO ]  Add record to PurchaseOrder_main for purchase number ->P20160107002921
+2016-01-07 00:29:26  [GUI.ImportFile.importFile(ImportFile.java:113)] - [ INFO ]  Add record to PurchaseOrder_detail for purchase number ->P20160107002921
+2016-01-07 00:29:26  [GUI.ImportFile.importFile(ImportFile.java:137)] - [ INFO ]  Add record to PurchaseOrder_check for purchase number ->P20160107002921
+2016-01-07 00:29:27  [GUI.ImportFile.importFile(ImportFile.java:160)] - [ INFO ]  Importing data finished.

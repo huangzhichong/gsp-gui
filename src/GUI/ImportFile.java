@@ -44,6 +44,7 @@ public class ImportFile {
         String user = Config.getInstance().getValue("user");
         String password = Config.getInstance().getValue("password");
         String host = Config.getInstance().getValue("host");
+        String qualityPerson = Config.getInstance().getValue("qualityPerson");
         DBHelper db = DBHelper.getInstance(host, user, password);
 
         List<Map<String, String>> listFromFile = ExcelHelper.readExcel(filePath);
@@ -56,6 +57,9 @@ public class ImportFile {
             String sku = rowMap.get("商品编码");
             String productRegNumber = rowMap.get("产品注册证") + " " + rowMap.get("产品注册证号");
             String number = rowMap.get("数量");
+            String batchNumber = rowMap.get("批号");
+            String productionDate = rowMap.get("出厂日期");
+            String expireDate = rowMap.get("保质期截至日期");
 
             String sqlSearchProduct = "Select 商品编号 from GoodsDefinition where 备注 = '" + sku + "'";
             List<Map<String, Object>> searchResults = db.executeQuery(sqlSearchProduct);
@@ -89,6 +93,7 @@ public class ImportFile {
             String productNumber = searchResults.get(0).get("商品编号").toString();
             logger.info("Get product number from database -> " + productNumber);
             String purchaseNumber = "P" + Common.timeStamp("yyyyMMddHHmmss");
+            String checkNumber = ("CN" + purchaseNumber.substring(5, 14));
             logger.info("Add record to PurchaseOrder_main for purchase number ->" + purchaseNumber);
 
             String sqlInsertPOMain = ("INSERT INTO PurchaseOrder_main(订单号,供应商,采购员,预计到货日期,摘要,附加说明,订单日期,是否完成验收,修改人,修改时间) VALUES ('"
@@ -128,8 +133,30 @@ public class ImportFile {
                     + contactPrerson
                     + "','" + contactPhoneNumber + "','无')");
             db.execute(sqlInsertPODetail);
+
+            logger.info("Add record to PurchaseOrder_check for purchase number ->" + purchaseNumber);
+
+            String sqlInsertPOCheck = ("INSERT INTO PurchaseOrder_check (订单号,商品编号,商品批号,验收编号,生产日期,有效期至,合格数量,不合格数量,检验报告号,合格质量状态,是否拒收,拒收原因,质量员,是否已质检,修改人,修改时间) VALUES ('"
+                    + purchaseNumber
+                    + "','"
+                    + productNumber
+                    + "','"
+                    + batchNumber
+                    + "','1','"
+                    + productionDate
+                    + "','"
+                    + expireDate
+                    + "','"
+                    + number
+                    + "','0','"
+                    + checkNumber
+                    + "','合格','0','无','"
+                    + qualityPerson
+                    + "','1','Administrator','" + Common.timeStamp() + "')");
+            db.execute(sqlInsertPOCheck);
+
         }
-        
+
         logger.info("Importing data finished.");
 
     }
