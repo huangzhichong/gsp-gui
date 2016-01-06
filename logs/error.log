@@ -159,3 +159,4 @@ org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appear
 java.sql.SQLException: Network error IOException: Connection refused
 2016-01-06 00:23:39  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:364)] - [ ERROR ]  Error in importing files. 
 java.lang.NullPointerException
+2016-01-06 13:08:58  [Helper.Config.<init>(Config.java:42)] - [ ERROR ]  Error in opening config file, use defaul values.

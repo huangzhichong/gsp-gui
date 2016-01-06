@@ -225,3 +225,61 @@ java.sql.SQLException: Network error IOException: Connection refused
 2016-01-06 00:23:39  [Helper.ExcelHelper.getWorkbook(ExcelHelper.java:163)] - [ INFO ]  Read file with xls format
 2016-01-06 00:23:39  [GUI.JChooseFile.jImportDataActionPerformed(JChooseFile.java:364)] - [ ERROR ]  Error in importing files. 
 java.lang.NullPointerException
+2016-01-06 11:04:04  [Helper.Config.<init>(Config.java:34)] - [ INFO ]  Package path /Users/huangsmart/NetBeansProjects/ImportData/build/classes/Helper/
+2016-01-06 11:06:36  [Helper.Config.<init>(Config.java:34)] - [ INFO ]  Package path /Users/huangsmart/NetBeansProjects/ImportData/build/classes/
+2016-01-06 11:07:04  [Helper.Config.<init>(Config.java:34)] - [ INFO ]  Package path /Users/huangsmart/NetBeansProjects/ImportData/build/classes/
+2016-01-06 11:08:51  [Helper.Config.<init>(Config.java:35)] - [ INFO ]  Resource Path/Users/huangsmart/NetBeansProjects/ImportData/build/classes/
+2016-01-06 11:14:25  [Helper.Config.<init>(Config.java:35)] - [ INFO ]  Resource Path -> /Users/huangsmart/NetBeansProjects/ImportData/build/classes/
+2016-01-06 11:14:25  [Helper.Config.<init>(Config.java:37)] - [ INFO ]  Resource Path -> /Users/huangsmart/NetBeansProjects/ImportData/build/classes/config.properties
+2016-01-06 11:15:24  [Helper.Config.<init>(Config.java:35)] - [ INFO ]  Resource Path -> /Users/huangsmart/NetBeansProjects/ImportData/build/classes/
+2016-01-06 11:19:51  [Helper.Config.<init>(Config.java:34)] - [ INFO ]  /Users/huangsmart/NetBeansProjects/ImportData/build/classes/Helper/config.properties
+2016-01-06 13:08:58  [Helper.Config.<init>(Config.java:42)] - [ ERROR ]  Error in opening config file, use defaul values.
+2016-01-06 13:10:59  [Helper.Config.<init>(Config.java:43)] - [ DEBUG ]  Error in opening config file, use defaul values.
+2016-01-06 13:12:03  [Helper.Config.<init>(Config.java:43)] - [ DEBUG ]  Error in opening config file, use defaul values.
+java.io.FileNotFoundException: /Users/huangsmart/NetBeansProjects/ImportDataconfig/config.properties (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at Helper.Config.<init>(Config.java:39)
+	at Helper.Config.getInstance(Config.java:50)
+	at GUI.JChooseFile.initComponents(JChooseFile.java:198)
+	at GUI.JChooseFile.<init>(JChooseFile.java:29)
+	at GUI.JChooseFile$7.run(JChooseFile.java:428)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2016-01-06 13:12:23  [Helper.Config.<init>(Config.java:43)] - [ DEBUG ]  Error in opening config file, use defaul values.
+java.io.FileNotFoundException: /Users/huangsmart/NetBeansProjects/ImportDataconfig/config.properties (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at Helper.Config.<init>(Config.java:39)
+	at Helper.Config.getInstance(Config.java:50)
+	at GUI.JChooseFile.initComponents(JChooseFile.java:198)
+	at GUI.JChooseFile.<init>(JChooseFile.java:29)
+	at GUI.JChooseFile$7.run(JChooseFile.java:428)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
