@@ -130,8 +130,8 @@ public class ImportFile {
                     + "','"
                     + productRegNumber
                     + "','"
-                    + contactPrerson
-                    + "','" + contactPhoneNumber + "','无')");
+                    + contactPhoneNumber
+                    + "','" + contactPrerson + "','无')");
             db.execute(sqlInsertPODetail);
 
             logger.info("Add record to PurchaseOrder_check for purchase number ->" + purchaseNumber);
