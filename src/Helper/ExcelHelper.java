@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -44,7 +45,17 @@ public class ExcelHelper {
         return temp.toUpperCase() + target.substring(1);
     }
 
-    public static boolean checkExcelColumn(String filePath) throws Exception {
+    public static boolean checkManufactoryInfoExcelColumn(String filePath) throws Exception {
+        List<String> requiredColumns = Arrays.asList("生产厂商", "供应商", "联系人", "联系方式");
+        return checkExcelColumn(filePath, requiredColumns);
+    }
+
+    public static boolean checkPurchaseInfoExcelColumn(String filePath) throws Exception {
+        List<String> requiredColumns = Arrays.asList("商品名称", "型号", "单位", "产地", "商品编码", "产品注册证", "产品注册证号", "数量", "批号");
+        return checkExcelColumn(filePath, requiredColumns);
+    }
+
+    public static boolean checkExcelColumn(String filePath, List<String> requiredColumns) throws Exception {
         Boolean result = false;
         if (filePath.endsWith(".xls")) {
             FileInputStream inputStream = null;
@@ -53,7 +64,7 @@ public class ExcelHelper {
             try {
                 inputStream = new FileInputStream(new File(filePath));
                 workbook = getWorkbook(inputStream, filePath);
-            } catch (Exception ex) {                
+            } catch (Exception ex) {
                 logger.error("Failed to open file " + filePath, ex);
                 throw ex;
             } finally {
@@ -75,7 +86,6 @@ public class ExcelHelper {
                     Cell c = headerRow.getCell(k);
                     headers.add(c.getStringCellValue());
                 }
-                List<String> requiredColumns = Arrays.asList("商品名称", "型号", "单位", "产地", "商品编码", "产品注册证", "产品注册证号", "数量","批号");
                 logger.info("Get headers -> " + headers.toString());
                 logger.info("Required headers => " + requiredColumns.toString());
                 if (headers.containsAll(requiredColumns)) {
@@ -89,6 +99,18 @@ public class ExcelHelper {
             logger.debug("Excel file must be in xls format");
         }
         return result;
+    }
+
+    public static Map<String, List<String>> readManufactoryInfo(String filePath) {
+        List<String> list = null;
+        Map<String, List<String>> hashResult = new HashMap<String, List<String>>();        
+        List<Map<String, String>> excelArray = readExcel(filePath);
+        for (Map<String, String> excelLine : excelArray) {
+            System.out.println(excelLine.get("生产商家"));
+            list = Arrays.asList(excelLine.get("供应商"), excelLine.get("联系人"), excelLine.get("联系方式"));
+            hashResult.put(excelLine.get("生产商家"), list);
+        }
+        return hashResult;
     }
 
     public static List<Map<String, String>> readExcel(String filePath) {

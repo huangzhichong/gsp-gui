@@ -22,8 +22,10 @@ public class ImportFile {
     private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(ImportFile.class);
 
     public static void doImport(String filePath) throws Exception {
-        boolean checkExcelColumn = ExcelHelper.checkExcelColumn(filePath);
-        if (checkExcelColumn) {
+        String manufactoryInfoFilePath = System.getProperty("user.dir") + "/config/信息表.xls";
+        boolean checkManufactoryInfoColumn = ExcelHelper.checkManufactoryInfoExcelColumn(manufactoryInfoFilePath);
+        boolean checkExcelColumn = ExcelHelper.checkPurchaseInfoExcelColumn(filePath);
+        if (checkManufactoryInfoColumn && checkExcelColumn) {
             try {
                 logger.info("Start importing data to database. The path for source file is " + filePath);
                 importFile(filePath);
@@ -32,14 +34,14 @@ public class ImportFile {
                 throw ex;
             }
         } else {
-            logger.debug("Columns in file header is not matching.");
+            logger.debug("Columns in file header is not matching.Please check the soruce file or manufactory info file.");
         }
     }
 
     public static void importFile(String filePath) throws IOException, InterruptedException {
+        String manufactoryInfoFilePath = System.getProperty("user.dir") + "/config/信息表.xls";
+        Map<String, List<String>> manufactoryInfo = ExcelHelper.readManufactoryInfo(manufactoryInfoFilePath);
 
-        String contactPrerson = Config.getInstance().getValue("contactPerson");
-        String contactPhoneNumber = Config.getInstance().getValue("contactPhoneNumber");
         String purchaser = Config.getInstance().getValue("purchaser");
         String user = Config.getInstance().getValue("user");
         String password = Config.getInstance().getValue("password");
@@ -60,6 +62,11 @@ public class ImportFile {
             String batchNumber = rowMap.get("批号");
             String productionDate = rowMap.get("出厂日期");
             String expireDate = rowMap.get("保质期截至日期");
+            List<String> temp = manufactoryInfo.get(manufactory);
+            
+            String supplier = temp.get(0);
+            String contactPrerson = temp.get(1);
+            String contactPhoneNumber = temp.get(2);
 
             String sqlSearchProduct = "Select 商品编号 from GoodsDefinition where 备注 = '" + sku + "'";
             List<Map<String, Object>> searchResults = db.executeQuery(sqlSearchProduct);
@@ -76,7 +83,7 @@ public class ImportFile {
                         + "','"
                         + manufactory
                         + "','"
-                        + manufactory
+                        + supplier
                         + "','"
                         + productRegNumber
                         + "','"
@@ -99,7 +106,7 @@ public class ImportFile {
             String sqlInsertPOMain = ("INSERT INTO PurchaseOrder_main(订单号,供应商,采购员,预计到货日期,摘要,附加说明,订单日期,是否完成验收,修改人,修改时间) VALUES ('"
                     + purchaseNumber
                     + "','"
-                    + manufactory
+                    + supplier
                     + "','"
                     + purchaser
                     + "','"
@@ -126,7 +133,7 @@ public class ImportFile {
                     + "','"
                     + manufactory
                     + "','"
-                    + manufactory
+                    + supplier
                     + "','"
                     + productRegNumber
                     + "','"
