@@ -46,7 +46,7 @@ public class ExcelHelper {
     }
 
     public static boolean checkManufactoryInfoExcelColumn(String filePath) throws Exception {
-        List<String> requiredColumns = Arrays.asList("生产厂商", "供应商", "联系人", "联系方式");
+        List<String> requiredColumns = Arrays.asList("生产商家", "供应商", "联系人", "联系方式");
         return checkExcelColumn(filePath, requiredColumns);
     }
 
