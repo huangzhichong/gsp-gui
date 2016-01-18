@@ -23,8 +23,10 @@ public class ImportFile {
 
     public static void doImport(String filePath) throws Exception {
         String manufactoryInfoFilePath = System.getProperty("user.dir") + "/config/信息表.xls";
-        boolean checkManufactoryInfoColumn = ExcelHelper.checkManufactoryInfoExcelColumn(manufactoryInfoFilePath);
+        boolean checkManufactoryInfoColumn = ExcelHelper.checkManufactoryInfoExcelColumn(manufactoryInfoFilePath);        
+        logger.info("Check manufactory info, get result ->  " + checkManufactoryInfoColumn);
         boolean checkExcelColumn = ExcelHelper.checkPurchaseInfoExcelColumn(filePath);
+        logger.info("Check purchase info, get result ->  " + checkExcelColumn);
         if (checkManufactoryInfoColumn && checkExcelColumn) {
             try {
                 logger.info("Start importing data to database. The path for source file is " + filePath);
