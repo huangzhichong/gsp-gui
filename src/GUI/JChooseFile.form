@@ -309,13 +309,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelUser" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldUser" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="3" groupAlignment="3" attributes="0">
-                              <Component id="jLabelQuality" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextFieldQuality" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="jLabelQuality" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldQuality" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="jTextFieldUser" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">

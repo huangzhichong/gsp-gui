@@ -76,7 +76,14 @@ public class ImportFile {
             if (searchResults.isEmpty()) {
 
                 logger.info("Adding product info to GoodsDifination");
-                String sqlInsertProdcut = ("INSERT INTO GoodsDefinition (商品名称,型号,基本单位,生产厂商,供应商,产品注册号,联系方式,联系人,备注,修改人,修改时间) VALUES ('"
+                
+                String sqlGetLastIndex = "SELECT TOP 1 商品编号 FROM GoodsDefinition Order by 商品编号 DESC";
+                List<Map<String, Object>> resultGetLastIndex = db.executeQuery(sqlGetLastIndex);
+                String lastIndex = resultGetLastIndex.get(0).get("商品编号").toString()+1;
+                
+                String sqlInsertProdcut = ("INSERT INTO GoodsDefinition (商品编号,商品名称,型号,基本单位,生产厂商,供应商,产品注册号,联系方式,联系人,备注,修改人,修改时间) VALUES ('"
+                        + lastIndex
+                        + "','"
                         + productName
                         + "','"
                         + model
