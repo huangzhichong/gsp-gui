@@ -51,7 +51,7 @@ public class ExcelHelper {
     }
 
     public static boolean checkPurchaseInfoExcelColumn(String filePath) throws Exception {
-        List<String> requiredColumns = Arrays.asList("商品名称", "型号", "单位", "产地", "商品编码", "产品注册证", "产品注册证号", "数量", "批号");
+        List<String> requiredColumns = Arrays.asList("商品名称", "型号", "单位", "产地", "商品编码", "产品注册证", "产品注册证号", "数量", "批号","出厂日期","保质期截至日期");
         return checkExcelColumn(filePath, requiredColumns);
     }
 
@@ -190,6 +190,16 @@ public class ExcelHelper {
         }
 
         return workbook;
+    }
+
+    public static Map<String, String> readQualityReportInfo(String filePath) {
+        List<String> list = null;
+        Map<String, String> hashResult = new HashMap<String, String>();        
+        List<Map<String, String>> excelArray = readExcel(filePath);
+        for (Map<String, String> excelLine : excelArray) {
+            hashResult.put(excelLine.get("型号"), excelLine.get("检验报告号"));
+        }
+        return hashResult;
     }
 
 }

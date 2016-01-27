@@ -56,10 +56,6 @@ public class JChooseFile extends javax.swing.JFrame {
         jLabelUser = new javax.swing.JLabel();
         jLabelPassword = new javax.swing.JLabel();
         jTextFieldUser = new javax.swing.JTextField();
-        jLabelContact = new javax.swing.JLabel();
-        jTextFieldContact = new javax.swing.JTextField();
-        jLabelContactPhone = new javax.swing.JLabel();
-        jTextFieldContactPhone = new javax.swing.JTextField();
         jLabelPurchaser = new javax.swing.JLabel();
         jTextFieldPurchaser = new javax.swing.JTextField();
         jTextFieldPassword = new javax.swing.JTextField();
@@ -228,17 +224,6 @@ public class JChooseFile extends javax.swing.JFrame {
         );
         jTextFieldUser.setEnabled(false);
 
-        jLabelContact.setLabelFor(jTextFieldContact);
-        jLabelContact.setText("联系人");
-
-        jTextFieldContact.setText(Config.getInstance().getValue("contactPerson")
-        );
-
-        jLabelContactPhone.setText("联系电话");
-
-        jTextFieldContactPhone.setText(Config.getInstance().getValue("contactPhoneNumber")
-        );
-
         jLabelPurchaser.setText("采购员");
 
         jTextFieldPurchaser.setText(Config.getInstance().getValue("purchaser")
@@ -281,27 +266,14 @@ public class JChooseFile extends javax.swing.JFrame {
                         .addGap(81, 81, 81)
                         .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanelMainLayout.createSequentialGroup()
-                                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanelMainLayout.createSequentialGroup()
-                                        .addComponent(jLabelContactPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextFieldContactPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanelMainLayout.createSequentialGroup()
-                                        .addComponent(jLabelContact, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextFieldContact, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(58, 58, 58))
+                                .addComponent(jLabelPurchaser, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextFieldPurchaser, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanelMainLayout.createSequentialGroup()
-                                .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanelMainLayout.createSequentialGroup()
-                                        .addComponent(jLabelPurchaser, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextFieldPurchaser, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanelMainLayout.createSequentialGroup()
-                                        .addComponent(jLabelQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextFieldQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE)))))
+                                .addComponent(jLabelQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextFieldQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(3, 3, 3))
         );
         jPanelMainLayout.setVerticalGroup(
@@ -329,16 +301,8 @@ public class JChooseFile extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelPassword)
-                    .addComponent(jTextFieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanelMainLayout.createSequentialGroup()
-                        .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextFieldContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelContact))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextFieldContactPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelContactPhone))))
-                .addContainerGap(7, Short.MAX_VALUE))
+                    .addComponent(jTextFieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -364,7 +328,7 @@ public class JChooseFile extends javax.swing.JFrame {
             jDialogLoading.setVisible(true);
             jImportData.setEnabled(false);
             try {
-                ImportFile.doImport(filePath);
+                ImportFile.doImport(filePath,jTextFieldPurchaser.getText(),jTextFieldQuality.getText());
                 jDialogLoading.dispose();
                 jDialogSuccess.setVisible(true);
             } catch (Exception ex) {
@@ -446,8 +410,6 @@ public class JChooseFile extends javax.swing.JFrame {
     private javax.swing.JFileChooser jFileChooser;
     private javax.swing.JTextField jFilePath;
     private javax.swing.JButton jImportData;
-    private javax.swing.JLabel jLabelContact;
-    private javax.swing.JLabel jLabelContactPhone;
     private javax.swing.JLabel jLabelHost;
     private javax.swing.JLabel jLabelLoading;
     private javax.swing.JLabel jLabelPassword;
@@ -460,8 +422,6 @@ public class JChooseFile extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelMain;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextAreaErrorMsg;
-    private javax.swing.JTextField jTextFieldContact;
-    private javax.swing.JTextField jTextFieldContactPhone;
     private javax.swing.JTextField jTextFieldHost;
     private javax.swing.JTextField jTextFieldPassword;
     private javax.swing.JTextField jTextFieldPurchaser;
